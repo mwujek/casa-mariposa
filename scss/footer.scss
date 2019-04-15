@@ -1,0 +1,114 @@
+footer{
+  width: 100%;
+  background: whitesmoke;
+  .footer-inner{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include set-padding-margin($footer-inner-padding);
+
+  }
+  .footer-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &:not(.bottom){
+      @include set-flex($footer-inner-flex);
+      // opacity: 0.2;
+    }
+  }
+}
+
+
+.footer-left-col, .footer-right-col{
+  ul{
+    list-style: none;
+    padding: 0 16px;
+    font-size: 20px;
+  }
+}
+
+.footer-row.bottom{
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $light-color;
+  height: 60px;
+  align-items: center;
+  i{
+    color: #98a7c1;
+    margin-right: 8px;
+  }
+  a{
+    color: $dark-color;
+  }
+}
+
+
+.lottie-footer{
+  width: 160px;
+  height: 110px;
+  margin-bottom: 16px;
+  border: 1px solid $dark-color;
+  border-radius: 8px;
+}
+#footer-menu-left{
+  padding:0;
+  li{
+
+    font-size: 20px;
+    padding:0;
+    margin: 0;
+    //font-family: 'halogen';
+    font-weight: 300;
+  }
+}
+
+// right
+
+#nav_footer{
+  padding: 0;
+  margin: 0;
+  li{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+
+    
+    &:before{  
+      box-sizing: border-box;
+      transition: margin-right 0.2s;
+      font-weight: 900;
+      font: normal normal normal 18px/1 'FontAwesome';
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      top: 1px;
+      margin-right: 8px;
+      color: #98a7c1;
+    }
+    &:nth-child(1):before{content: "\f015";}
+    &:nth-child(2):before{content: "\f02d";}
+    &:nth-child(3):before{content: "\f0c0"; font-size: 16px;}
+    &:nth-child(4):before{content: "\f072";}
+    &:nth-child(5):before{content: "\f06b";}
+    &:nth-child(6):before{content: "\f046";}
+      
+    a{
+      color: $dark-color;
+    }
+    &:hover{
+      &:before{
+        margin-right: 12px;
+      }
+    }
+  }
+}

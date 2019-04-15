@@ -1,0 +1,61 @@
+#wpadminbar{
+	display: none;
+}
+
+$container-max-width: 960px;
+$dark-color: #2C2D35;
+$light-color: #E6EBF0;
+$mid-grey: #9EA8B0;
+$drop-shadow: rgba(59, 70, 89,0.15) 0px 0px 24px 8px;
+
+a{
+	color: #2196f3;
+	text-decoration: underline;
+
+}
+
+
+@import 'milligram';
+
+@import 'mixin-keys';
+@import 'mixin-rules';
+@import 'typography';
+@import 'components';
+@import 'nav-bar';
+@import 'footer';
+@import 'slides';
+@import 'forms';
+@import 'registry';
+@import 'travel';
+@import 'invite';
+
+body{
+	font-family: 'stratos';	
+	margin:0;
+	color: $dark-color;
+	//margin-top: 80px; // past nav-bar
+}
+
+
+
+.nf-field-element li{
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-bottom: 8px !important;
+	text-indent: 0 !important;
+	display: flex;
+	float: none;
+	input, label{
+		float: none !important;
+	}
+	
+}
+
+.list-radio-wrap .nf-field-element li input[type=radio], .list-checkbox-wrap .nf-field-element li input[type=checkbox],.list-checkbox-wrap .nf-field-element li input[type=radio], .list-radio-wrap .nf-field-element li input,.field-wrap>div input[type=checkbox],.list-checkbox-wrap .nf-field-element li input, .list-radio-wrap .nf-field-element li input{
+	width: 18px !important;
+	height: 18px !important;
+}
+
+.nf-field-container.submit-container input[type=button]{
+	-webkit-appearance: none !important;
+}

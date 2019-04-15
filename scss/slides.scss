@@ -1,0 +1,137 @@
+.slide-container{
+  max-width: $container-max-width;
+  margin: 40px auto 88px auto;
+  padding: 0;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+.slide-title{
+  font-family: 'halogen';
+  font-weight: 900;
+  text-align: center;
+  margin-top: 64px;
+}
+.slide-list{
+  @include set-display($slide-list-display);
+    
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    li{
+      padding: 0 10px;
+      margin: 0 2px;
+      cursor: pointer;
+      position: relative;
+      top: 0;
+      transition: border-color 0.15s;
+      border: 1px solid rgba(0,0,0,0);
+      border-radius: 20px;
+      &.active{
+        font-weight: 700;
+        border: 1px solid $dark-color;
+      }
+    }
+}
+
+
+.slide-content{
+  //padding: 20px 40px;
+  background: whitesmoke;
+  //margin: 20px 0 40px 0;
+  border-radius: 24px;
+  max-width: 640px;
+  margin: 20px auto;
+  @include set-padding-margin($slide-content-padding);
+  &.story{
+    //background: none;
+    // /padding: 0;
+  }
+}
+// .slide-item{
+//   display: flex;
+//   width: 100%;
+//   // width: 640px;
+//   // height: 400px;
+//   padding: 24px 48px;
+//   box-sizing: border-box;
+//   @include set-flex($slide-flex);
+//   @include set-padding-margin($slide-item-padding);
+//   .slide-img{
+//     padding: 0;
+//     .profile{
+//       margin-bottom: 16px;
+//       padding: 0;
+//       width: 200px;
+//       height: 200px;
+//       background: #ccc;
+//       border-radius: 200px;
+//       background-size: cover !important;
+//       &.laura{  background: url(../img/lauraw.png)}
+//       &.laurad{  background: url(../img/laurad.png)}
+//       &.allison{  background: url(../img/allison.jpeg)}
+//       &.michelle{  background: url(../img/michelle.jpg)}
+//       &.mandy{  background: url(../img/mandy.png)}
+//       &.erin{  background: url(../img/erin.png)}
+//       &.donna{  background: url(../img/donna.png)}
+//       &.seth{  background: url(../img/seth.jpeg)}
+//       &.paul{  background: url(../img/paul.jpg)}
+//       &.chris{  background: url(../img/chris.png)}
+//       &.charlie{  background: url(../img/charlie.png)}
+//       &.peter{  background: url(../img/peter.jpg)}
+//       &.shane{  background: url(../img/shane.png)}
+//       &.paul{ background:url(../img/paul.jpg)}
+//       &.adele{ background:url(../img/adele.jpg)}
+//       &.patty{  background:url(../img/patty.png)}
+//       &.ozzy{ background:url(../img/ozzy.png)}
+//       &.marc{ background:url(../img/marc.png)}
+//       &.lucy{ background:url(../img/lucy.png)}
+//       &.henry{  background:url(../img/henry.png)}
+//       @include set-width-height($slide-profile-size);
+      
+      
+//     }
+//   }
+//   .slide-copy{
+//     padding: 0;
+//     display: flex;
+//     align-items: center !important;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding: 0 0 0 20px;
+//     @include set-padding-margin($slide-copy-padding);
+//     @include set-flex($slide-copy-flex);
+    
+//     h3{
+//       padding: 0;
+//       margin: 0;
+//       font-weight: 900;
+
+//     }
+//     h4{
+//       padding: 0;
+//       margin: 0;
+//     }
+//     p{
+//       padding-top: 16px;
+//       margin-bottom:0;
+//     }
+//   }
+// }
+
+
+// flickity UI
+.flickity-viewport{
+  transition: height 0.15s;
+}
+.flickity-page-dots{
+  //width: calc(100vw - 64px) !important;
+  // bottom: -40px;
+  //@include set-display($slide-dots-display);
+}

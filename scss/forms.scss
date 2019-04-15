@@ -1,0 +1,98 @@
+.asd{
+
+}
+
+.form-container{
+  //margin-top: 48px;
+  margin-bottom: 48px;
+  padding-top: 48px;
+  max-width: 600px;
+  background: $light-color;
+  border-radius: 8px;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
+  width: calc(100vw - 32px);
+  iframe{
+    max-width: 100%;
+  }
+}
+
+input.ninja-forms-field:not([type="button"]),textarea.ninja-forms-field{
+  background:#fff;
+  padding: 16px 16px;
+  border-radius: 8px;
+  font-family: 'bicyclette';
+  border: 0;
+  font-size: 18px;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $mid-grey;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $mid-grey;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $mid-grey;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $mid-grey;
+  }
+  //text-align: center;
+}
+
+// .nf-error{
+//   text-align: center;
+// }
+
+input.ninja-forms-field[type="button"]{
+  background: $dark-color;
+  color: #fff;
+  border: 0;
+  padding: 0 40px;
+  font-size: 16px;
+  font-weight: 400;
+  @extend .rounded-button;
+}
+
+
+.nf-form-fields-required, .ninja-forms-req-symbol{
+  display:  none;
+}
+
+.nf-field-label{
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  label{
+    //font-family: 'halogen';
+    font-family: 'bicyclette';
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+.field-wrap{
+  display: flex;
+}
+
+
+.nf-field-element label{
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+// flickity below
+
+.nf-field-container{
+  width:100%;
+}
+
+
+
+
+
+
+
+
+

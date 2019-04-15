@@ -1,0 +1,38 @@
+.gif-box{
+  background: url(../img/poc.gif);
+  background-size: cover;
+  width:  600px;
+  height: 600px;
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8888px;
+  &.small{
+    width: 240px;
+    height: 240px;
+  }
+  a.fatty{
+    background: #666;
+    font-family: halogen;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 40px;
+    transform: scale(0.9);
+    transition: transform 0.2s, background 0.2s;
+    &:hover{
+      transform: scale(1);
+      background: $dark-color;
+    }
+  }
+
+}
+
+.gif-container{
+  background: url('../img/bg-texture-3.jpg');
+  background-size: cover;
+  display:  flex;
+  padding: 64px;
+  align-items: center;
+  justify-content: center;
+}
