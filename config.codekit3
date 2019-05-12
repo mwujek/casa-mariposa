@@ -150,6 +150,135 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/img/casa/airbnb-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/casa/airbnb-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/casa/beach-1.jpg": {
+		"ft": 16384,
+		"iS": 91363,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/beach-2.jpg": {
+		"ft": 16384,
+		"iS": 109503,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/beach-3.jpg": {
+		"ft": 16384,
+		"iS": 131045,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/beach-4.jpg": {
+		"ft": 16384,
+		"iS": 97723,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/beach-5.jpg": {
+		"ft": 16384,
+		"iS": 75741,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/beach-6.jpg": {
+		"ft": 16384,
+		"iS": 96752,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/beach-7.jpg": {
+		"ft": 16384,
+		"iS": 88896,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/casa/beach-7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/casa/sl-logo.png": {
+		"ft": 32768,
+		"iS": 25820,
+		"oA": 0,
+		"oAP": "/img/casa/sl-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/casa/sl.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/casa/sl.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/img/casa/team.png": {
+		"ft": 32768,
+		"iS": 164699,
+		"oA": 0,
+		"oAP": "/img/casa/team.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/casa/vrbo-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/casa/vrbo-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/img/charlie.png": {
 		"ft": 32768,
 		"iS": 40619,
@@ -898,6 +1027,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/nav-bar.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/pop-up.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/pop-up.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

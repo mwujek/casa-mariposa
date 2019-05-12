@@ -15,8 +15,8 @@ header{
   &.anchored{
     background: rgba(0,0,0,0);
     transform: scale(0.9);
-    .header-inner a, ul#nav_main li a{color: #fff;}
-    ul#nav_main li:last-child{border: 2px solid #fff; color: #fff}
+    .header-inner a, ul#nav_main li a, ul#nav_main li{color: #fff;}
+    ul#nav_main li:last-child{border: 2px solid #fff; color: #fff !important}
     ul#nav_main li{
       height: 60px;
       border-radius: 12px;
@@ -38,8 +38,11 @@ header{
     @include set-padding-margin($navigation-inner-padding);
     
   }
+
+  
   a.logo-link{
-    font-size: 24px;
+    font-size: 18px;
+
     font-family: 'presicav';
     -webkit-font-smoothing: antialiased;
     font-weight: 700;
@@ -57,6 +60,10 @@ header{
     }
   }
 }
+
+@media screen and (min-width: 640px){
+    header a.logo-link{font-size: 24px}
+  }
 
 
 @-webkit-keyframes logo-sparkle {
@@ -174,7 +181,7 @@ nav{
           //transform: scale(1.1);
           background: #222b3a;
           border-color: rgba(0,0,0,0) !important;
-          a{color: #fff !important;}
+          color: #fff !important;
         }
         // &:before{
         //   box-sizing: inherit;

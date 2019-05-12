@@ -11,6 +11,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -18,7 +19,7 @@
 	<link rel="stylesheet" href="/css/wuj-base-style.css">
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.min.css">
 
@@ -27,6 +28,77 @@
 
 
 <body>
+
+	<!-- pop-up DOM -->
+	<div class="remodal-bg">
+	<div class="remodal booking" data-remodal-id="modal">
+	  
+	  <h1>Book a room</h1>
+	  <p>
+	    Choose from one of our trusted partners to check availability:
+	  </p>
+
+	  <h2>Penthouse</h2>
+	  <ul class="partners-list">
+	  	<li>
+	  		<a class="c" href="https://www.sayulitalife.com/casa-mariposa">
+	  			<article><img src="img/casa/sl.svg"/></article>
+	  			<span>Sayulita Life</span>
+	  			<div>View</div>
+	  		</a>
+	  	</li>
+	  	<li>
+	  		<a class="a" href="https://www.airbnb.com/rooms/34573301">
+	  			<article><img src="img/casa/airbnb-logo.svg"/></article>
+	  			<span>Airbnb</span>
+	  			<div>View</div>
+	  		</a>
+	  	</li>
+	  	<!-- <li>
+	  		<a class="b" href="#">
+	  			<article><img src="img/casa/vrbo-logo.svg"/></article>
+	  			<span>Vrbo</span>
+	  			<div>View</div>
+	  		</a>
+	  	</li> -->
+	  </ul>
+
+	  <h2>Flat</h2>
+	  <ul class="partners-list">
+	  	<li>
+	  		<a class="c" href="https://www.sayulitalife.com/casa-mariposa">
+	  			<article><img src="img/casa/sl.svg"/></article>
+	  			<span>Sayulita Life</span>
+	  			<div>View</div>
+	  		</a>
+	  	</li>
+	  	<li>
+	  		<a class="a" href="https://www.airbnb.com/rooms/34536537">
+	  			<article><img src="img/casa/airbnb-logo.svg"/></article>
+	  			<span>Airbnb</span>
+	  			<div>View</div>
+	  		</a>
+	  	</li>
+	  	<!-- <li>
+	  		<a class="b" href="#">
+	  			<article><img src="img/casa/vrbo-logo.svg"/></article>
+	  			<span>Vrbo</span>
+	  			<div>View</div>
+	  		</a>
+	  	</li> -->
+	  </ul>
+	  <button data-remodal-action="close" class="remodal-close">Close</button>
+	  
+	</div>
+	</div>
+
+
+	
+
+	<!-- END OF pop-up DOM -->
+
+
+
 	<header id="asd" class="anchored">
 		<div class="header-inner">
 			<a href="/" class="logo-link">CASA MARIPOSA</a>
@@ -35,9 +107,9 @@
 					<ul id="nav_main" class="menu">
 						<li class="menu-item"><a href="#photos">Photos</a></li>
 						<li class="menu-item"><a href="#penthouse">Rooms</a></li>
-						<li class="menu-item"><a href="#reviews">Reviews</a></li>
+						<!-- <li class="menu-item"><a href="#reviews">Reviews</a></li> -->
 						<li class="menu-item"><a href="#faqs">FAQs</a></li>
-						<li class="menu-item"><a href="#">Book</a></li>
+						<li class="menu-item booking-link">Book</li>
 					</ul>
 				</div>
 			</nav>
@@ -55,6 +127,7 @@
 		<article class="simple-content-block">
 			<h1 class="centered-heading">The most important headline goes here. Should be brief and tweet-sized.</h1>
 			<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier chicharrones kale chips listicle scenester jianbing cold-pressed asymmetrical viral hexagon. Banh mi meditation pitchfork fixie raclette woke. Food truck everyday carry keffiyeh ramps kinfolk. Activated charcoal adaptogen fixie schlitz squid neutra flannel chicharrones viral microdosing poke cronut williamsburg four dollar toast four loko.</p>
+
 		</article>
 
 		<article class="async-photo-section simple-content-block" id="photos">
@@ -62,11 +135,15 @@
 			<p>Easy on the eyes, even better with sunglasses</p>
 			<div class="async-photo-container">
 				<div class="photo-content">
-					<a href="/img/casa/4.jpg" data-fancybox="gallery"><img src="/img/casa/4.jpg"></a>
-					<a href="/img/casa/2.jpg" data-fancybox="gallery"><img src="/img/casa/2.jpg"></a>
-					<a href="/img/casa/3.jpg" data-fancybox="gallery"><img src="/img/casa/3.jpg"></a>
-					<a href="/img/casa/1.jpg" data-fancybox="gallery"><img src="/img/casa/1.jpg"></a>
-					<a href="/img/casa/5.jpg" data-fancybox="gallery"><img src="/img/casa/5.jpg"></a>
+					<a href="/img/casa/4.jpg" data-caption="My caption 1" data-fancybox="gallery"><img src="/img/casa/4.jpg"></a>
+					<a href="/img/casa/2.jpg" data-caption="My caption 2" data-fancybox="gallery"><img src="/img/casa/2.jpg"></a>
+					<a href="/img/casa/3.jpg" data-caption="My caption 3" data-fancybox="gallery"><img src="/img/casa/3.jpg"></a>
+					<a href="/img/casa/1.jpg" data-caption="My caption 4" data-fancybox="gallery"><img src="/img/casa/1.jpg"></a>
+					<a href="/img/casa/5.jpg" data-caption="My caption 5" data-fancybox="gallery"><img src="/img/casa/5.jpg"></a>
+					<a href="/img/casa/2.jpg" data-caption="My caption 6" data-fancybox="gallery"><img src="/img/casa/2.jpg"></a>
+					<a href="/img/casa/3.jpg" data-caption="My caption 7" data-fancybox="gallery"><img src="/img/casa/4.jpg"></a>
+					<a href="/img/casa/1.jpg" data-caption="My caption 8" data-fancybox="gallery"><img src="/img/casa/2.jpg"></a>
+					<a href="/img/casa/5.jpg" data-caption="My caption 9" data-fancybox="gallery"><img src="/img/casa/5.jpg"></a>
 				</div>
 				<div class="centered-cta">
 					<a href="#">View more</a>
@@ -74,15 +151,31 @@
 			</div>
 		</article>
 
+		<article class="simple-content-block" id="beach-walk">
+			<h1>Walk to the beach</h1>
+			<p>Casa Mariposa is conveniently located two blocks from the beach. It only take a minute to walk there, but our neighborhood has a lot to offer, so you'll probably be making a few stops along the way </p>
+			<div class="flickity-slideshow" id="penthouse">
+				<!-- <div class="slide-item"><img src="/img/casa/4.jpg"></div> -->
+				<div class="slide-item" desc="slide item 1"><img src="/img/casa/beach-1.jpg"></div>
+				<div class="slide-item" desc="slide item 2"><img src="/img/casa/beach-2.jpg"></div>
+				<div class="slide-item" desc="slide item 3"><img src="/img/casa/beach-3.jpg"></div>
+				<div class="slide-item" desc="slide item 4"><img src="/img/casa/beach-4.jpg"></div>
+				<div class="slide-item" desc="slide item 5"><img src="/img/casa/beach-5.jpg"></div>
+				<div class="slide-item" desc="slide item 6"><img src="/img/casa/beach-6.jpg"></div>
+				<div class="slide-item" desc="slide item 7"><img src="/img/casa/beach-7.jpg"></div>
+			</div>
+
+		</article>
+
 		<article class="simple-content-block" id="penthouse">
 			<h1>The Penthouse</h1>
 			<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier chicharrones kale chips listicle scenester jianbing cold-pressed asymmetrical viral hexagon. Banh mi meditation pitchfork fixie raclette woke.</p>
 			<div class="flickity-slideshow" id="penthouse">
 				<!-- <div class="slide-item"><img src="/img/casa/4.jpg"></div> -->
-				<div class="slide-item"><img src="/img/casa/2.jpg"></div>
-				<div class="slide-item"><img src="/img/casa/3.jpg"></div>
-				<div class="slide-item"><img src="/img/casa/1.jpg"></div>
-				<div class="slide-item"><img src="/img/casa/5.jpg"></div>
+				<div class="slide-item" desc="slide item 1"><img src="/img/casa/2.jpg"></div>
+				<div class="slide-item" desc="slide item 2"><img src="/img/casa/3.jpg"></div>
+				<div class="slide-item" desc="slide item 3"><img src="/img/casa/1.jpg"></div>
+				<div class="slide-item" desc="slide item 4"><img src="/img/casa/5.jpg"></div>
 			</div>
 
 			<div class="spec-list">
@@ -104,7 +197,7 @@
 			</div>
 
 			<div class="centered-cta">
-					<a href="#">Check availability</a>
+					<span href="#" class="booking-link">Check availability</span>
 					<p>You can book with one of our trusted partners</p>
 				</div>
 		</article>
@@ -115,10 +208,10 @@
 			<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier chicharrones kale chips listicle scenester jianbing cold-pressed asymmetrical viral hexagon.</p>
 			<div class="flickity-slideshow photo-slides" id="flat">
 				<!-- <div class="slide-item"><img src="/img/casa/4.jpg"></div> -->
-				<div class="slide-item"><img src="/img/casa/5.jpg"></div>
-				<div class="slide-item"><img src="/img/casa/2.jpg"></div>
-				<div class="slide-item"><img src="/img/casa/3.jpg"></div>
-				<div class="slide-item"><img src="/img/casa/1.jpg"></div>
+				<div class="slide-item" desc="slide item 1"><img src="/img/casa/5.jpg"></div>
+				<div class="slide-item" desc="slide item 2"><img src="/img/casa/2.jpg"></div>
+				<div class="slide-item" desc="slide item 3"><img src="/img/casa/3.jpg"></div>
+				<div class="slide-item" desc="slide item 4"><img src="/img/casa/1.jpg"></div>
 				
 			</div>
 
@@ -141,7 +234,7 @@
 			</div>
 
 			<div class="centered-cta">
-					<a href="#">Check availability</a>
+					<span class="booking-link" >Check availability</span>
 					<p>You can book with one of our trusted partners</p>
 				</div>
 		</article>
@@ -153,15 +246,31 @@
 			<div class="data-block">
 				<div class="data-item">
 					<i class="fas fa-walking"></i>
-					<p>5min to the beach</p>
+					<p>2 blocks to the beach</p>
 				</div>
 				<div class="data-item">
 					<i class="fa fa-plane-departure"></i>
-					<p>1hr to PVR</p>
+					<p>45min to PVR</p>
 				</div>
 				<div class="data-item">
 					<i class="fa fa-sun" aria-hidden="true"></i>
-					<p>80&#176F yearly avg</p>					
+					<p>86&#176F yearly avg</p>					
+				</div>
+			</div>
+
+			<div class="data-block">
+				
+				<div class="data-item">
+					<i class="fa fa-wifi"></i>
+					<p>Netflix-worthy WiFi</p>
+				</div>
+				<div class="data-item">
+					<i class="fas fa-tint"></i>
+					<p>Drinking water</p>
+				</div>
+				<div class="data-item">
+					<i class="fa fa-mug-hot" aria-hidden="true"></i>
+					<p>Coffee & Tea</p>					
 				</div>
 			</div>
 
@@ -171,7 +280,7 @@
 
 				<article class="accordion-item">
 					<div class="accordion-title">
-						<span>Lorem ipsum dolor amet?</span>
+						<span>Is there parking?</span>
 					</div>
 					<div class="accordion-content">
 						<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier</p>
@@ -180,7 +289,16 @@
 
 				<article class="accordion-item">
 					<div class="accordion-title">
-						<span>Banh mi meditation?</span>
+						<span>Do you have a pool?</span>
+					</div>
+					<div class="accordion-content">
+						<p>No—but we're 2 blocks away from ***Name Here*** Neighborhood pool and restaurant</p>
+					</div>
+				</article>
+
+				<article class="accordion-item">
+					<div class="accordion-title">
+						<span>What's the neighborghood like?</span>
 					</div>
 					<div class="accordion-content">
 						<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier</p>
@@ -189,30 +307,21 @@
 
 				<article class="accordion-item">
 					<div class="accordion-title">
-						<span>Glossier chicharrones?</span>
+						<span>How late can I check-in or check-out?</span>
 					</div>
 					<div class="accordion-content">
 						<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier</p>
 					</div>
 				</article>
 
-				<article class="accordion-item">
-					<div class="accordion-title">
-						<span>Cold-pressed asymmetrical viral?</span>
-					</div>
-					<div class="accordion-content">
-						<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier</p>
-					</div>
-				</article>
-
-				<article class="accordion-item">
+<!-- 				<article class="accordion-item">
 					<div class="accordion-title">
 						<span>Readymade whatever distillery?</span>
 					</div>
 					<div class="accordion-content">
 						<p>Lorem ipsum dolor amet sriracha 90's cray small batch street art scenester. Disrupt lyft readymade whatever distillery glossier</p>
 					</div>
-				</article>
+				</article> -->
 			</div>
 		</article>
 
@@ -220,9 +329,9 @@
 			<h1>Contact us</h1>
 			<p>Lorem ipsum we typically respond within one day.</p>
 			<ul class="centered-list contact-us">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Email</a></li>
+				<!-- <li><a href="#">Facebook</a></li> -->
+				<li><a href="https://www.instagram.com/hola.casa.mariposa/">Instagram</a></li>
+				<li><a href="mailto:hola.casa.mariposa@gmail.com">Email</a></li>
 			</ul>
 
 
@@ -240,10 +349,10 @@
 			<li class="menu-item"><a href="#photos">Photos</a></li>
 			<li class="menu-item"><a href="#penthouse">The Penthouse</a></li>
 			<li class="menu-item"><a href="#flat">Master Flat</a></li>
-			<li class="menu-item"><a href="#reviews">Reviews</a></li>
+			<!-- <li class="menu-item"><a href="#reviews">Reviews</a></li> -->
 			<li class="menu-item"><a href="#faqs">FAQs</a></li>
 			<li class="menu-item"><a href="#contact">Contact us</a></li>
-			<li class="menu-item"><a href="#">Book</a></li>
+			<li class="menu-item booking-link">Book</li>
 		</ul>
 	</footer>
 </body>

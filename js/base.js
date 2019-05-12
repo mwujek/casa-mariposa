@@ -18,14 +18,58 @@ jQuery( document ).ready( function() {
     });
 
 
+  var updateSlideCopy = function(index, parent,init){
+    var info = parent.find('.slide-item').eq(index).attr('desc');
+    console.log(info);
+    if(init){
+      parent.append('<p class="flickity-desc">'+info+'</p>');
+    } else{
+      parent.find('.flickity-desc').text(info)
+    }
+
+    // console.log(parent);
+    // parent.fadeOut();
+  }
 
   $('.flickity-slideshow').flickity({
     // options
-    cellAlign: 'left',
+    cellAlign: 'center',
     contain: true,
-    //prevNextButtons: false,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    imagesLoaded: true,
+    wrapAround: true,
+    on: {
+      ready: function() {
+        var parent = $(this)[0]['$element'];
+        updateSlideCopy(0, parent,true)
+      },
+      change: function( index ) {
+        var parent = $(this)[0]['$element'];
+        //console.log( 'Slide changed to' + index );
+        updateSlideCopy(index, parent)
+      }
+  }
+
   });
+
+
+  
+
+  //$('[data-remodal-id=modal]').remodal(options);
+  var inst = $('[data-remodal-id=modal]').remodal();
+  $('.booking-link').click(function(){
+    console.log('go');
+    inst.open();
+  });
+
+  $('.remodal-close').click(function(){
+    console.log('close');
+    inst.close();
+    var state = inst.getState();
+    console.log(state);
+
+  });
+  
 
 
   var initAccordion = function(){

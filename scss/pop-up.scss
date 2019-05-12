@@ -1,0 +1,81 @@
+.remodal-wrapper{
+	background: rgba(0,0,0,0.5);
+    &.remodal-is-opened{
+    	display: flex !important;
+    }
+    align-items: center;
+    justify-content: center;
+}
+
+
+.remodal.booking{
+	background: #fff;
+	max-width: 400px;
+	padding: 24px;
+	height: auto;
+	border-radius: 4px;
+	h2{
+		font-size: 2.4rem;
+		text-align:left !important;
+	}
+}
+
+.partners-list{
+	list-style: none;
+	padding: 0;
+	text-indent: 0;
+	li{
+		margin: 6px 0;
+		
+
+		&:last-child{
+			border: 0;
+		}
+
+		a{
+			padding: 0;
+			//border-radius: 4px;
+			//background: red;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			width: 100%;
+			span{
+				width: 100%;
+				text-align: left;
+				padding-left: 16px;
+				color: $dark-color !important;
+				font-size: 2rem;
+
+			}
+			div{
+				padding: 8px 16px;
+				border: 1px solid $dark-color;
+				border-radius: 4px;
+				color: $dark-color !important;
+			}
+			article{
+				height: 50px;
+				width: 50px;
+				flex-shrink: 0.1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+			}
+			&.a article{
+				background: #FF5A5F;
+				img{height: 40px; width: 40px;}}
+			&.b article{
+				background: #2465bc;
+				img{height: 40px; width: 40px;}}
+			&.c article{
+				background: #fff2cb;
+				img{height: 40px; width: 40px;}}
+
+		}
+	}
+	img{
+		height: 60px;
+	}
+}
